@@ -27,7 +27,7 @@ stages:
     - task: Docker@2
       inputs:
         containerRegistry: 'docker-hub-connection'
-        repository: 'acrrepo'
+        repository: 'proacr'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
         tags: |
